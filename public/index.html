@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--控制网页在不同设备上的显示和缩放-->
+        <meta name="author" content="Tydecent">
+        <meta name="description" content="Tydecent的留言板 | 分享你的想法">
+        
+        <title>留言板 | 分享你的想法</title>
+
+        <link href="style.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.0/css/all.css"><!--外部图标字体库-->
+
+        <script src="script.js"> </script>
+        
+
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="logo">
+                    
+                    <h1>留言板</h1>
+                </div>
+                <p class="tagline">分享你的想法，让世界听到你的声音</p>
+                <nav>
+                    <a href="https://tydecent.top">根域名</a>
+                    <a href="https://tydecent.top">网盘</a>
+                </nav>
+            </header>
+            
+            <div class="content">
+                <div class="form-container">
+                    <h2><i class="fa-solid fa-pen-to-square"></i> 发布留言</h2>
+                    <form id="messageForm">
+                        <div class="form-group">
+                            <label for="name">您的称呼（可选）</label>
+                            <input type="text" id="name" class="form-control" placeholder="输入您的姓名">
+                        </div>
+                        
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="anonymous">
+                            <label for="anonymous">匿名发布</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">留言内容</label>
+                            <textarea id="message" class="form-control" placeholder="善语结善缘，恶语伤人心，拒绝网络暴力" required></textarea>
+                        </div>
+                        <p><i class="fa-solid fa-file-code"></i> 允许使用HTML语法</p>
+                        
+                        <button type="submit" class="btn">发布留言 <i class="fa-solid fa-paper-plane-top"></i></button>
+
+                        <p><br></p>
+                        
+                        <div class="message">
+                            <div class="message-header">
+                                <div class="author "><i class="fa-solid fa-code"></i> 网站开发者</div>
+                                <div class="timestamp"><i class="fa-solid fa-calendar-days"></i> 3088/13/32 24:60</div>
+                            </div>
+                            <div class="message-content">
+                                <p>
+                                    <p>
+                                        <i class="fa-solid fa-ban"></i> 你的玩笑，可能是别人的伤口。
+                                        <br>
+                                        禁止网络暴力
+                                    </p>
+                                    <a href="https://www.gov.cn/gongbao/2024/issue_11526/202408/content_6969181.html"><i class="fa-solid fa-paperclip"></i> 《网络暴力信息治理规定》</a>
+                                </p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="messages-container">
+                    <h2><i class="fa-solid fa-comments"></i> 最新留言</h2>
+                    <div class="message-list" id="messageList">
+                        <!-- 留言将动态加载到这里 -->
+                    </div>
+                    <p><i class="fa-solid fa-circle-info"></i> 称呼为“网站开发者”的留言是网站开发者留下的</p>
+                </div>
+                
+            </div>
+
+            <!-- <div class="message">
+                <p>您使用的设备留下了以下信息，这些信息将被记录。请放心，这些信息不涉及您的隐私。</p>
+
+            </div> -->
+            
+            <hr>
+
+            <footer>
+                <!-- <p>十年磨一剑，今朝试锋芒！祝愿所有考生金榜题名，梦想成真！</p> -->
+                <p>蝗虫敬启 | <a href="https://www.gov.cn/xinwen/2019-11/08/content_5450004.htm"><i class="fa-solid fa-ban-smoking"></i>No Smoking</a></p>
+                <div class="text-center" id="footer-text">性能和安全由<a rel="noopener noreferrer" href="https://www.cloudflare.com?utm_source=challenge&amp;utm_campaign=m" target="_blank"><i class="fa-brands fa-cloudflare"></i> Cloudflare</a>提供</div>
+                <h1><i class="fa-brands fa-node"></i></h1>
+            </footer>
+        </div>
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"94ace6bdfbfaef79","version":"2025.5.0","r":1,"token":"92e2732516f442d0a2ce2ad55c35d5f3","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}}}' crossorigin="anonymous"></script>
+</body>
+</html>
