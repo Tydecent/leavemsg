@@ -57,21 +57,6 @@ async function submitMessage() {
         alert('请输入留言内容');
         return;
     }
-
-    if (name == "网站开发者") {
-        /*那些打败不了你的，终会使你更加强大*/
-        alert('???竟然想谋权篡位?');
-        return;
-    }
-
-    if (name == "蝗虫") {
-        return;
-    }
-
-    if (name == "屁水" || name == "豪猪" || name == "痞帅" || name == "豪猪男") {
-        alert('善语结善缘，恶语伤人心，拒绝网络暴力')
-        return;
-    }
     
     try {
         // 使用URLSearchParams创建表单数据
