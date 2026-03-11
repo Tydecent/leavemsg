@@ -31,7 +31,7 @@
 1. 克隆或下载此项目
 2. 进入项目目录
    ```bash
-   cd leavemsg.tydecent.top
+   cd leavemsg/
    ```
 3. 安装依赖
    ```bash
