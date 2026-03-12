@@ -1,3 +1,7 @@
 /node_modules
 
-/*.json
+/message.json
+
+/*.log
+
+/config.json
