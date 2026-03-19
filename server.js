@@ -24,8 +24,6 @@ const server = http.createServer((req, res) => {
     serveStaticFile(res, '/style.css', 'text/css');
   } else if (pathname === '/script.js') {
     serveStaticFile(res, '/script.js', 'text/js')
-  }else if (pathname === '/robots.txt') {
-    serveStaticFile(res, '/robots.txt', 'robots.txt');
   }
   
   // 获取留言
