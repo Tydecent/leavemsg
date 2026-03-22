@@ -64,3 +64,7 @@ leavemsg.tydecent.top/
 
 - 服务器端口：默认12001（可在server.js中修改PORT变量）
 - 留言存储文件：messages.json（公开）和developer_messages.json（仅开发者）
+
+# 法律与许可
+本开源项目遵循MIT许可证，这意味着你可以自由地使用、修改、分发本项目。唯一的要求是保留版权标识。
+许可全文详见[LICENSE](LICENSE)文件。
